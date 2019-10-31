@@ -1,6 +1,132 @@
-<header class="header-container">
-<div class="row">
-    <div class="col-sm-6">demo</div>
-    <div class="col-sm-6">demo</div>
-</div>
+<header class="bh_header">
+    <div class="bh_header__inner" aria-label="Main navigation" role="navigation">
+        <div class="bh_header__logo-container">
+            <a class="js-tracked-without-react c_header__logo-wrap" href="/" target="_self" data-tracking-event="logo"
+                rel=" noopener noreferrer">
+                <img class="udemy-logo" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="Udemy"
+                    width="110" height="32" data-purpose="udemy-brand-logo">
+            </a>
+        </div>
+        <div class="hidden-xs hidden-xxs">
+            <div class="dropdown--open-on-hover dropdown--topics dropdown--open-on-hover dropdown">
+                <a data-purpose="browse-courses-link" href="javascript:void(0)" id="header.browse" role="button"
+                    class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span
+                        class="udi udi-explore"></span><span> Products</span></a>
+                <ul role="menu" class="dropdown-menu" aria-labelledby="header.browse">
+                    <li class="h100p">
+                        <ul class="dropdown-menu__list dropdown-menu__list--level-one" role="dialog"
+                            aria-label="Products">
+                            <li class="menu_link" data-purpose="ver-development" role="presentation">
+                                <a href="#" aria-expanded="false" role="button" target="_self"><span
+                                        data-purpose="menu-icon" class="menu__icon udi udi-development"></span><span
+                                        class="fx">Development</span><span data-purpose="menu-item-arrow"
+                                        class="menu__arrow udi udi-next"></span></a>
+                            </li>
+                            <li class="menu_link" data-purpose="ver-development" role="presentation">
+                                <a href="#" aria-expanded="false" role="button" target="_self"><span
+                                        data-purpose="menu-icon" class="menu__icon udi udi-development"></span><span
+                                        class="fx">Development</span><span data-purpose="menu-item-arrow"
+                                        class="menu__arrow udi udi-next"></span></a>
+                            </li>
+                            <li class="menu_link" data-purpose="ver-development" role="presentation">
+                                <a href="#" aria-expanded="false" role="button" target="_self"><span
+                                        data-purpose="menu-icon" class="menu__icon udi udi-development"></span><span
+                                        class="fx">Development</span><span data-purpose="menu-item-arrow"
+                                        class="menu__arrow udi udi-next"></span></a>
+                            </li>
+                            <li class="menu_link" data-purpose="ver-development" role="presentation">
+                                <a href="#" aria-expanded="false" role="button" target="_self"><span
+                                        data-purpose="menu-icon" class="menu__icon udi udi-development"></span><span
+                                        class="fx">Development</span><span data-purpose="menu-item-arrow"
+                                        class="menu__arrow udi udi-next"></span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bh_header__search-wrapper">
+            <div class="bh_header__search"><button aria-label="Search" data-purpose="toggle-search-on-small-screens"
+                    type="button" class="bh_header__mobile-bt btn btn-link"><span
+                        class="udi udi-search"></span></button>
+                <div class="bh_quick-search__form pos-r">
+                    <div class="dropdown es-autocomplete es-autocomplete--primary" data-purpose="es-autocomplete">
+                        <form action="/courses/search/" class=""><input type="hidden" name="src" value="ukw"><label
+                                for="header-search-field" class="control-label sr-only">
+                                Search for anything
+                            </label><span class="input-group"><input data-purpose="search-input" name="q"
+                                    maxlength="200" placeholder="Search for anything" autocomplete="off"
+                                    id="header-search-field" class="form-control" value=""><span
+                                    class="input-group-btn"><button aria-label="
+                Search for anything
+                " type="submit" class="btn btn-link"><span class="udi udi-search"></span></button></span></span></form>
+                        <ul role="menu" class="dropdown-menu"></ul>
+                    </div><button aria-label="Close" data-purpose="mobile-search-close-button" type="button"
+                        class="c_header__mobile-close-bt btn btn-quintinary"><span
+                            class="udi udi-close"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="bh_header__right">
+            <div class="ud-component--header-v6--try-ufb-dropdown-button visible-lg-block visible-xl-block"
+                ng-non-bindable=""><span class="track-impression--waypoint--wvgq2"><span
+                        style="font-size: 0px;"></span></span>
+                <div class="dropdown--ufb zero-state dropdown--open-on-hover dropdown"><a data-purpose="ufb-link"
+                        href="https://business.udemy.com/request-demo/?locale=en_US&amp;mx_pg=logout&amp;ref=ufb_header"
+                        rel="noopener noopener" target="_blank" id="header.try-ufb" role="button"
+                        class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Udemy for Business</a>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="header.try-ufb">
+                        <li role="presentation">
+                            <div class="zero-state__detail">
+                                <div>Get your team access to 3,500+ top Udemy courses anytime, anywhere</div>
+                            </div>
+                            <div class="mt-space-sm"><a class="zero-state__cta a11 semibold"
+                                    href="https://business.udemy.com/request-demo/?locale=en_US&amp;mx_pg=logout&amp;ref=ufb_header"
+                                    target="_blank" rel="noopener noopener">Try Udemy for Business</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ud-component--header-v6--instructor-dropdown-button visible-lg-block visible-xl-block"
+                ng-non-bindable="">
+                <div class="dropdown--open-on-hover dropdown--instructor zero-state dropdown--open-on-hover dropdown"><a
+                        data-purpose="instructor-dropdown" href="/teaching/?ref=teach_header" rel=" noopener noreferrer"
+                        target="_self" id="header.instructor" role="button" class="dropdown-toggle" aria-haspopup="true"
+                        aria-expanded="false">Teach on Udemy</a>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right" aria-labelledby="header.instructor">
+                        <li role="presentation">
+                            <div class="zero-state__detail">
+                                <div>Turn what you know into an opportunity and reach millions around the world.</div>
+                            </div>
+                            <div class="mt-space-sm"><a class="zero-state__cta a11 semibold"
+                                    href="/teaching/?ref=teach_header" target="_self">Learn more</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="visible-lg-block visible-xl-block header-right-divider"></div>
+            <div class="shopping-cart">
+                <div class="ud-component--header-v6--cart-dropdown" data-purpose="cart-icon" ng-non-bindable="">
+                    <div class="dropdown--icon dropdown--shopping-list dropdown--open-on-hover dropdown"><a
+                            href="/cart/" target="_self" id="header.dropdown.cart" role="button" class="dropdown-toggle"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="fx pos-r text-center"><span class="sr-only">Shoplist</span><span
+                                    class="dropdown__main-icon udi udi-cart-line"></span></div>
+                        </a>
+                        <ul role="menu" class="hidden dropdown-menu dropdown-menu-right"
+                            aria-labelledby="header.dropdown.cart"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-space-sm hidden-xs hidden-xxs"></div>
+            <div class="dropdown dropdown--login hidden-xs hidden-xxs"
+                ng-non-bindable="">
+                <div><button data-purpose="header-login" type="button" class="btn btn-quaternary">Log In</button></div>
+            </div>
+            <div class="dropdown dropdown--signup hidden-xs hidden-xxs"
+                ng-non-bindable="">
+                <div><button data-purpose="header-signup" type="button" class="btn btn-primary">Sign Up</button></div>
+            </div>
+        </div>
+    </div>
 </header>
