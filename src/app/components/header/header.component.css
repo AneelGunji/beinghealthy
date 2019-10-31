@@ -1,0 +1,11 @@
+.header-container {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 9;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
