@@ -113,10 +113,6 @@ a {
     -webkit-user-drag: none;
     padding: 0;
 }
-.bh_header .bh_quick-search__form .dropdown {
-    margin: 0;
-    padding: 0;
-}
 .es-autocomplete--primary .input-group {
     background-color: #f2f3f5;
     border-radius: 2px;
