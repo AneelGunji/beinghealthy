@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products-discovery.component.css']
 })
 export class ProductsDiscoveryComponent implements OnInit {
+  products;
 
-  constructor() { }
+  constructor() { 
+    this.products = [{
+      img:'assets/images/2.jpg',
+    }]
+  }
 
   ngOnInit() {
   }

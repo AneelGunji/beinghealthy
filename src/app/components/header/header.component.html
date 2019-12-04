@@ -10,8 +10,8 @@
         <div class="hidden-xs hidden-xxs">
             <div class="dropdown--open-on-hover dropdown--topics dropdown--open-on-hover dropdown">
                 <a data-purpose="browse-courses-link" href="javascript:void(0)" id="header.browse" role="button"
-                    class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><span
-                        class="udi udi-explore"></span><span> Products</span></a>
+                    class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"><i class="fas fa-th"></i><span>
+                        Products</span></a>
                 <ul role="menu" class="dropdown-menu" aria-labelledby="header.browse">
                     <li class="h100p">
                         <ul class="dropdown-menu__list dropdown-menu__list--level-one" role="dialog"
@@ -59,7 +59,7 @@
                                     id="header-search-field" class="form-control" value=""><span
                                     class="input-group-btn"><button aria-label="
                 Search for anything
-                " type="submit" class="btn btn-link"><span class="udi udi-search"></span></button></span></span></form>
+                " type="submit" class="btn btn-link"><i class="fas fa-search"></i></button></span></span></form>
                         <ul role="menu" class="dropdown-menu"></ul>
                     </div><button aria-label="Close" data-purpose="mobile-search-close-button" type="button"
                         class="c_header__mobile-close-bt btn btn-quintinary"><span
@@ -108,10 +108,10 @@
             <div class="shopping-cart">
                 <div class="ud-component--header-v6--cart-dropdown" data-purpose="cart-icon" ng-non-bindable="">
                     <div class="dropdown--icon dropdown--shopping-list dropdown--open-on-hover dropdown"><a
-                            href="/cart/" target="_self" id="header.dropdown.cart" role="button" class="dropdown-toggle"
+                            href="/cart/" target="_self" id="header.dropdown.cart" role="button" class="dropdown-toggle cart-icon"
                             aria-haspopup="true" aria-expanded="false">
-                            <div class="fx pos-r text-center"><span class="sr-only">Shoplist</span><span
-                                    class="dropdown__main-icon udi udi-cart-line"></span></div>
+                            <div class="fx pos-r text-center"><span class="sr-only">Shoplist</span><i
+                                    class="far fa-shopping-cart"></i></div>
                         </a>
                         <ul role="menu" class="hidden dropdown-menu dropdown-menu-right"
                             aria-labelledby="header.dropdown.cart"></ul>
@@ -119,12 +119,10 @@
                 </div>
             </div>
             <div class="ml-space-sm hidden-xs hidden-xxs"></div>
-            <div class="dropdown dropdown--login hidden-xs hidden-xxs"
-                ng-non-bindable="">
+            <div class="dropdown dropdown--login hidden-xs hidden-xxs" ng-non-bindable="">
                 <div><button data-purpose="header-login" type="button" class="btn btn-quaternary">Log In</button></div>
             </div>
-            <div class="dropdown dropdown--signup hidden-xs hidden-xxs"
-                ng-non-bindable="">
+            <div class="dropdown dropdown--signup hidden-xs hidden-xxs" ng-non-bindable="">
                 <div><button data-purpose="header-signup" type="button" class="btn btn-primary">Sign Up</button></div>
             </div>
         </div>

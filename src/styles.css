@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/fonts/css/all.css';
 body {
     font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
     font-size: 15px;
@@ -6,6 +7,12 @@ body {
     color: #29303b;
     background-color: #fff;
     margin: 0;
+}
+.margin-right-15{
+    margin-right: 15px;
+}
+.margin-tb-20{
+    margin:20px 0px;
 }
 .btn {
     display: inline-block;
@@ -61,4 +68,102 @@ body {
 .bh_header .dropdown--open-on-hover:hover .dropdown-toggle, .bh_header .dropdown--open-on-hover.open .dropdown-toggle {
     background: rgba(20,23,28,.05);
     border-color: rgba(20,23,28,.05);
+}
+.dropdown-toggle::after {
+    border:none;
+}
+.cart-icon{
+    border-radius: 50%;
+    padding: 12px 0;
+    width: 45px;
+}
+
+/* slider CSS custom */
+.slick-prev, .slick-next {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+.slick-next {
+    right: 0px;
+}
+.slick-prev {
+    left: 0px;
+}
+/* product list css */
+.products-list{
+    display: flex;
+}
+.unit-title h2 {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.47em;
+    color: #505763;
+}
+.product-box{
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    width: 216px;
+    height: 290px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+}
+
+
+/* testimonials styles */
+.container--light-grey {
+    background: #f7f8fa;
+}
+.carousel-container{
+    display: flex;
+}
+.brand-testimonials--testimonials-container {
+    height: 100%;
+    padding: 32px 16px;
+}
+.brand-testimonials--testimonials__header {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33em;
+}
+.brand-testimonials--testimonial-card{
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(20,23,28,.15);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 260px;
+    padding: 32px;
+}
+.brand-testimonials--testimonial-card .brand-testimonials--reviewer-info{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5em;
+    align-items: center;
+    display: flex;
+    margin-bottom: 18px;
+}
+.brand-testimonials--testimonial-card .brand-testimonials--reviewer-info .brand-testimonials--avatar {
+    margin-right: 18px;
+}
+.brand-testimonials--testimonial-card .brand-testimonials--reviewer-info .user-avatar {
+    display: block;
+}
+.brand-testimonials--testimonial-card .brand-testimonials--testimonial-content{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
 }
