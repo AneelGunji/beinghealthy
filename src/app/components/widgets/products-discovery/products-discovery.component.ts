@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsDiscoveryComponent implements OnInit {
   products;
-
+  demoData ="";
   constructor() { 
     this.products = [{
       img:'assets/images/2.jpg',
@@ -15,6 +15,9 @@ export class ProductsDiscoveryComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+  demobt(){
+  this.demoData = "this is my product";
   }
 
 }
