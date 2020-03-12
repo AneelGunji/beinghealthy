@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModuleModule } from './shared-module/shared-module.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -21,6 +22,7 @@ import { TestimonialsComponent } from './components/widgets/testimonials/testimo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModuleModule,
     SlickCarouselModule
   ],
   providers: [],

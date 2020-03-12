@@ -1,12 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/fonts/css/all.css';
 body {
-    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
-    font-size: 15px;
+    font-family: Lato,sans-serif;
     line-height: 1.43;
-    color: #29303b;
-    background-color: #fff;
-    margin: 0;
+    background: #fff;
+    font-size: 14px;
 }
 .margin-right-15{
     margin-right: 15px;
@@ -166,4 +164,167 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
+}
+/* new styles */
+
+.small-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.border-section {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.footer-light{
+    background-color: #f9f9f9;
+}
+.footer-light .subscribe {
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+.btn-solid {
+    padding: 13px 29px;
+    color: #fff;
+    letter-spacing: .05em;
+    border: 2px solid #ff4c3b;
+    background-image: linear-gradient(30deg,#ff4c3b 50%,transparent 0);
+    background-size: 540px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.section-b-space {
+    padding-bottom: 70px;
+}
+.subscribe-form .form-control {
+    padding: 13px;
+    width: 345px;
+    border-radius: 0;
+    border: 1px solid #eee;
+}
+.sub-footer {
+    background-color: #fff;
+}
+.section-b-space {
+    padding-bottom: 70px;
+}
+.section-t-space, section {
+    padding-top: 70px;
+}
+.footer-social, .social-white {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.footer-social li, .social-white li {
+    display: inline-block;
+    padding-right: 45px;
+}
+.footer-theme .sub-title .contact-list li {
+    position: relative;
+    padding-left: 25px;
+    line-height: 28px;
+}
+.footer-theme .sub-title .contact-list i {
+    position: absolute;
+    left: 0;
+    top: 21px;
+}
+.footer-theme .sub-title h4 {
+    color: #222;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.footer-theme .sub-title li, .footer-theme .sub-title li a {
+    position: relative;
+    color: #777;
+}
+.footer-theme .sub-title li {
+    display: inherit;
+    padding-top: 13px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.footer-theme .sub-title h4 {
+    color: #222;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+a:hover {
+    text-decoration: none;
+}
+a, a:hover {
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+.footer-theme .sub-title li:hover a:before {
+    width: 100%;
+    height: 2px;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+.footer-theme .sub-title li a:before {
+    position: absolute;
+    top: 20px;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ff4c3b;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+h3, h4 {
+    font-weight: 400;
+    letter-spacing: .03em;
+}
+h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 1;
+}
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.sub-footer p {
+    color: #777;
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+footer p {
+    line-height: 32px;
+    letter-spacing: .03em;
+    margin-bottom: 0;
+}
+.sub-footer .payment-card-bottom {
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1;
+}
+.sub-footer .payment-card-bottom li {
+    padding-left: 7px;
+    padding-right: 7px;
+    display: inline-block;
+}
+.container {
+    max-width: 1400px;
 }
