@@ -1,10 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/fonts/css/all.css';
-body {
+/* body {
     font-family: Lato,sans-serif;
     line-height: 1.43;
     background: #fff;
     font-size: 14px;
+} */
+body{
+width: 100%;
+    overflow-x: hidden;
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .margin-right-15{
     margin-right: 15px;
@@ -327,4 +334,245 @@ p {
 }
 .container {
     max-width: 1400px;
+}
+
+/* products list page styles */
+.product-verticalFilters {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: margin .2s cubic-bezier(.25,.46,.45,.94);
+    transition: margin .2s cubic-bezier(.25,.46,.45,.94);
+    margin-top: 0;
+    padding-top: 23px;
+}
+.header-container {
+    position: relative;
+    border-right: none!important;
+    padding-top: 0;
+}
+.vertical-filters{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-bottom: 1px solid #e9e9ed;
+    position: relative;
+    border-right: 1px solid #edebef;
+}
+.categories-container {
+    position: relative;
+}
+.vertical-filters-header {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 0 18px;
+    clear: both;
+    color: #282c3f;
+    display: block;
+}
+.search-leftContainer {
+    min-width: 252px;
+    max-width: 252px;
+    -webkit-box-flex: 0!important;
+    -ms-flex-positive: 0!important;
+    flex-grow: 0!important;
+}
+.search-leftContainer ul {
+    margin: 0;
+    list-style-type: none;
+}
+.vertical-filters .vertical-filters-label {
+    display: block;
+    width: 95%;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 17px;
+    color: #282c3f;
+}
+.common-customCheckbox {
+    position: relative;
+    cursor: pointer;
+}
+.common-customCheckbox input {
+    margin: 0 16px 0 0;
+    visibility: hidden;
+}
+.common-customCheckbox input:checked~.common-checkboxIndicator {
+    border: none;
+    background: #ff3f6c;
+}
+.common-checkboxIndicator {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #c3c2c9;
+    background: #fff;
+    border-radius: 2px;
+}
+.common-checkboxIndicator:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+    width: 8px;
+    height: 5px;
+    border-color: #fff;
+    border-style: none none solid solid;
+    border-width: 2px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.count-num {
+    color: #94969f;
+    font-size: 11px;
+    margin-left: 4px;
+}
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.search-rightContainer {
+    padding-left: 0;
+}
+.horizontal-filters-base {
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    border-bottom: 1px solid #eaeaec;
+    padding-bottom: 15px;
+    padding-top: 23px;
+}
+.horizontal-filters-sortContainer {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-top: -7px;
+    position: relative;
+    top: 5px;
+}
+.sort-sortBy {
+    padding: 9px 14px;
+    font-size: 14px;
+    color: #282c3f;
+    cursor: pointer;
+    position: relative;
+    width: 255px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #d4d5d9;
+}
+.sort-sortBy span {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #282c3f;
+}
+.sort-sortBy:hover {
+    -webkit-box-shadow: 0 8px 10px 0 rgba(0,0,0,.08);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,.08);
+}
+.sort-sortBy:hover .sort-list {
+    display: block;
+}
+.sort-list li:hover {
+    background-color: #f4f4f5;
+}
+ul.sort-list{
+    list-style: none;
+}
+.sort-list {
+    width: 255px;
+    background-color: #fff;
+    position: absolute;
+    top: 33px;
+    left: -1px;
+    margin: 0;
+    padding: 16px 0;
+    z-index: 2;
+    display: none;
+    border: 1px solid #d4d5d9;
+    border-top: none;
+    -webkit-box-shadow: 0 8px 10px 0 rgba(0,0,0,.08);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,.08);
+}
+.sort-list label {
+    display: block;
+    font-size: 14px;
+    color: #282c3f;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.sort-label input {
+    visibility: hidden;
+    display: none;
+}
+.sort-downArrow {
+    margin-left: 5px;
+    margin-top: 5px;
+    float: right;
+}
+.sprites-downArrow {
+    background-position: -367px -1px;
+    width: 15px;
+    height: 10px;
+}
+.myntraweb-sprite {
+    background: url(https://constant.myntassets.com/web/assets/img/b8817bd3-5993-48e4-9771-92e4e56…-MyntraWeb-Sprite.png);
+    background-size: 1404px 105px;
+    display: inline-block;
+}
+.atsa-filters {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #282c3f;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: -10px 0 0 16px;
+}
+.atsa-filters input {
+    display: none;
+}
+ul.atsa-filters{
+    padding: 0px;
+    list-style: none;
+
+}
+.atsa-filters li {
+    margin-right: 4px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.atsa-title {
+    font-weight: 400;
+    margin: 0;
+    display: inline-block;
+}
+.atsa-downArrow, .atsa-upArrow {
+    vertical-align: middle;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    margin-left: 4px;
+}
+.atsa-filters .atsa-selected, .atsa-filters .atsa-selected:hover, .atsa-filters label:hover {
+    border-radius: 20px;
+    background-color: #f4f4f5;
 }
