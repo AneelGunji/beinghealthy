@@ -897,3 +897,9 @@ h3.product-brand {
     padding-left: 25px;
     list-style-type: none;
 }
+@media (min-width: 1500px){
+    .desktop-paneContent {
+        left: 9%;
+        margin: auto;
+    }
+}
